@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes moveleft {
+            0%{
+                opacity: 0;
+                transform: translate(-200px);
+            }
+            100%{
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+        .container{
+            max-width: 400px;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 100px;
+            padding: 30px;
+            background-color: azure;
+            box-shadow: 20px 20px 20px black;
+        }
+        input{
+            width: 100%;
+        }
+        form div{
+            margin-bottom: 20px;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        .first{
+            animation: moveleft 2s ease-out; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register page</h2>
+        <form>
+            <div class="first">
+            <label>Email</label><br>
+            <input type="email" name="input">
+            </div>
+            <div class="first">
+            <label>password</label><br>
+            <input type="password" name="input">
+            </div>
+            <div class="first">
+            <label>Confirm password</label><br>
+            <input type="password" name="input">
+            </div>
+
+            <div class="first">
+            <label>Address</label><br>
+            <input type="text" name="input">
+            </div>
+            <div class="first">
+            <label>Date of Birth</label><br>
+            <input type="dob" name="input">
+            </div>
+            <input class="first" type="submit" value="submit">
+            
+        </form>
+    </div>
+</body>
+</html>
